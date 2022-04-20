@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>過去飯</title>
+  <link rel="stylesheet" href="css/sample.css">
+</head>
+
+<body>
+  <header>
+    <title>過去飯</title>
+  </header>
+
+  <main>
+    
+    <div class="title">
+      <h1>過去飯</h1>
+      <p class="subtitle">〜日々の体の摂取記録〜</p>
+    </div>
+    <div class="format_box">
+      <div class="format">
+        <input type="date" id="day">
+        <select name="" id="food_time">
+        <option value="breakfast">朝食</option>
+        <option value="lunch">昼食</option>
+        <option value="diner">夕食</option>
+        </select>
+        <select name="" id="place">
+          <option value="home_cooking">内食</option>
+          <option value="eating_out">外食</option>
+          <option value="bento">弁当</option>
+          <option value="no">なし</option>
+        </select>
+        <select name="" id="foods">
+          <option value="meat">肉</option>
+          <option value="fish">魚</option>
+          <option value="berad">パン</option>
+          <option value="noodles">麺類</option>
+          <option value="fast_food">ファーストフード</option>
+          <option value="other">その他</option>
+        </select>
+        <textarea id="text_area" rows="4" cols="40"></textarea>
+      </div>
+      <div class="button">
+        <button class="save">保存</button>
+        <button class="clear">削除</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    // データを保存
+    /*
+    $('#save').on('click', function () {
+      const title = $('#input').val();
+      const text = $('#text_area').val();
+      const data = {
+        title: title,
+        text: text,
+      };
+      console.log(data);
+      const jsonData = JSON.stringify(data);
+      console.log(jsonData);
+      localStorage.setItem('memo', jsonData);
+    });
+
+    // データを削除するときの処理
+    $('#clear').on('click', function () {
+      localStorage.removeItem('memo');
+      $('#text_area').val('');
+    });
+
+    // データを取得する際の処理
+    if (localStorage.getItem('memo')) {
+      const jsonData = localStorage.getItem('memo');
+      console.log(jsonData);
+      const data = JSON.parse(jsonData);
+      console.log(data);
+      $('#input').val(data.title);
+      $('#text_area').val(data.text);
+    }
+    */
+   console.log('hallo');
+
+
+    // // 今日の日付データを変数hidukeに収納
+    // const hiduke = new Date();
+
+    // // 年・月・曜日を取得する
+    // const year = hiduke.getFullYear();
+    // const month = hiduke.getMonth()+1;
+    // const week = hiduke.getDay();
+    // const day = hiduke.getDate();
+
+    // const yobi = new Array('日','月','火','水','木','金','土');
+    // document.write('西暦'+year+'年'+month+'月'+day+'日'+yobi[week]+'曜日');
+    
+
+  </script>
+
+</body>
+
+</html>
